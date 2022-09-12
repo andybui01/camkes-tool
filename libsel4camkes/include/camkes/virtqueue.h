@@ -54,6 +54,8 @@ extern camkes_virtqueue_channel_t camkes_virtqueue_channels[MAX_CAMKES_VIRTQUEUE
 /* The number of virtqueue channels registered to a component */
 extern int num_registered_virtqueue_channels;
 
+camkes_virtqueue_channel_t *get_virtqueue_channel(virtqueue_role_t role, unsigned int camkes_virtqueue_id);
+
 /**
  * @brief      Convert a string name to a camkes virtqueue channel id.
  *
